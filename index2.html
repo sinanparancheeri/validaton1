@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    
+        #myform {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+    
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+    
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #6c63ff;
+            outline: none;
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6c63ff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #5a54d4;
+        }
+    
+        /* Error styles */
+        input[type="text"].error,
+        input[type="password"].error {
+            border-color: red;
+            color: red;
+        }
+    
+        input[type="text"].success,
+        input[type="password"].success {
+            border-color: green;
+            color: green;
+        }
+    
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    
+        #myform {
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="myform">
+
+        name <input type="text" id="name" placeholder="name"><br><br><br>
+
+        password <input type="password" id="password" placeholder="password"><br><br><br>
+
+        email <input type="text" id="email" placeholder="email"><br><br><br>
+<!-- 
+        <p id="result"></p>
+        <p id="resultp"></p> -->
+
+        <button type="button" onclick="some()">Submit</button>
+    </form>
+</body>
+<script src="index2.js"></script>
+
+</html> 
